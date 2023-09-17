@@ -13,8 +13,8 @@ for i in range(15):
     pos_dict = match_position(job_df.Position[i])
     pos_dict = dict(sorted(pos_dict.items(), key=lambda item:item[1],reverse=True))
     pos_list = list(pos_dict.keys())
-    pos_list = pos_list[:3]
-    for j in range(3):
+    pos_list = pos_list[:5]
+    for j in range(5):
         filepath_list[i][j] = f"{resume_path}\{pos_list[j]}"
         df2 = parse_resumes(filepath_list[i][j])
         df1 =pd.concat([df1,df2], ignore_index=True)
