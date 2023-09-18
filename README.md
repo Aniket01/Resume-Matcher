@@ -4,3 +4,4 @@ Install the dependencies using pip:
 ```
 pip install -r requirements.txt
 ```
+Then run main.py
